@@ -17,17 +17,7 @@ import {
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
-  ShoppingCartOutlined,
-  Groups2Outlined,
-  ReceiptLongOutlined,
-  PublicOutlined,
-  PointOfSaleOutlined,
-  TodayOutlined,
-  CalendarMonthOutlined,
   AdminPanelSettingsOutlined,
-  TrendingUpOutlined,
-  PieChartOutlined,
-
 } from "@mui/icons-material";
 
 import { useEffect, useState } from "react";
@@ -46,54 +36,17 @@ const navItems = [
   },
 
   {
-    text: "Management",
+    text: "Authentication",
     icon: null,
   },
   {
-    text: "Admin",
+    text: "Login",
     icon: <AdminPanelSettingsOutlined />,
   },
   {
-    text: "Products",
-    icon: <ShoppingCartOutlined />,
+    text: "Register",
+    icon: <AdminPanelSettingsOutlined />,
   },
-  {
-    text: "Customers",
-    icon: <Groups2Outlined />,
-  },
-  {
-    text: "Transactions",
-    icon: <ReceiptLongOutlined />,
-  },
-  {
-    text: "Geography",
-    icon: <PublicOutlined />,
-  },
-  {
-    text: "Sales",
-    icon: null,
-  },
-  {
-    text: "Overview",
-    icon: <PointOfSaleOutlined />,
-  },
-  {
-    text: "Daily",
-    icon: <TodayOutlined />,
-  },
-  {
-    text: "Monthly",
-    icon: <CalendarMonthOutlined />,
-  },
-  {
-    text: "Breakdown",
-    icon: <PieChartOutlined />,
-  },
-  {
-    text: "Performance",
-    icon: <TrendingUpOutlined />,
-  },
-  
 ];
 
 const Sidebar = ({
@@ -123,7 +76,7 @@ const Sidebar = ({
           sx={{
             width: drawerWidth,
             "& .MuiDrawer-paper": {
-              color: theme.palette.secondary[200],
+              color: theme.palette.primary[900],
               backgroundColor: theme.palette.background.alt,
               boxSixing: "border-box",
               borderWidth: isNonMobile ? 0 : "2px",

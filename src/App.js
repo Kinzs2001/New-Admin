@@ -6,6 +6,8 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { themeSettings } from "./Theme";
 import Layout from "./scenes/layout";
 import Dashboard from "./scenes/dashboard";
+import SignIn from "./scenes/Signin";
+import SignUp from "./scenes/Signup";
 
 
 function App() {
@@ -20,17 +22,9 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              {/* <Route path="/products" element={<Products />} />
-              <Route path="/customers" element={<Customers />} />
-              <Route path="/transactions" element={<Transactions />} />
-              <Route path="/geography" element={<Geography />} />
-              <Route path="/overview" element={<Overview />} />
-              <Route path="/daily" element={<Daily />} />
-              <Route path="/monthly" element={<Monthly />} />
-              <Route path="/breakdown" element={<Breakdown />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/performance" element={<Performance />} /> */}
             </Route>
+              <Route path="/login" target="_blank" element={<SignIn />} />
+              <Route path="/register" target="_blank" element={<SignUp />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

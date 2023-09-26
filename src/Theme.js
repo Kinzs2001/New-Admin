@@ -16,20 +16,21 @@ export const tokensDark = {
       1000: "#000000", // manually adjusted
     },
     primary: {
-      // blue
-      100: "#d3d4de",
-      200: "#a6a9be",
-      300: "#7a7f9d",
-      400: "#4d547d",
-      500: "#21295c",
-      600: "#191F45", // manually adjusted
-      700: "#141937",
-      800: "#0d1025",
-      900: "#070812",
+      // BLACK
+      50: "#f9f9f9", // manually adjusted
+      100: "#f3f3f3",
+      200: "#eaeaea",
+      300: "#dadada",
+      400: "#b7b7b7",
+      500: "#979797",
+      600: "#6f6f6f", // manually adjusted
+      700: "#5b5b5b",
+      800: "#3c3c3c",
+      900: "#1c1c1c",
     },
     secondary: {
-      // white
-      50: "#f3f3f9", // manually adjusted
+      // BLUE
+      50: "#F6F8FA", // manually adjusted
       100: "#cccfde",
       200: "#cccfde",
       300: "#b8bbcf",
